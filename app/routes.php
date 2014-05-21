@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@homepage');
+
 
 Route::get('/users/{id}', 'UsersController@sayHi');
 Route::get('/admin/users/{id}', 'UsersController@adminSayHi');
