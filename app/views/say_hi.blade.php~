@@ -1,0 +1,3 @@
+<html>
+dit is een view. met id: {{ $id }}
+</html>
