@@ -13,7 +13,7 @@
 
 Route::get('/', 'HomeController@homepage');
 Route::get('/games', 'HomeController@games');
-
+Route::get('/stream', 'HomeController@stream');
 
 Route::get('/users/{id}', 'UsersController@sayHi');
 Route::get('/admin/users/{id}', 'UsersController@adminSayHi');

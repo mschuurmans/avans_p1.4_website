@@ -17,7 +17,7 @@ class HomeController extends BaseController
 	public function stream()
 	{
 		$title = 'Essperience | Live Stream';
-		return View::make('stream', compact('title'));
+		return View::make('games', compact('title'));
 	}
 
 }
