@@ -8,4 +8,10 @@ class HomeController extends BaseController
 		return View::make('homepage', compact('title'));
 	}
 
+	public function games()
+	{
+		$title = 'games';
+		return View::make('games', compact('title'));
+	}
+
 }

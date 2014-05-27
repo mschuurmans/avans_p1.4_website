@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@homepage');
+Route::get('/games', 'HomeController@games');
 
 
 Route::get('/users/{id}', 'UsersController@sayHi');
