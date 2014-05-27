@@ -78,7 +78,7 @@
 <div id="footer">
     <div class="container">
         <p class="muted credit">copyright &copy; essperience.tostring.nl
-        <span style='float:right;'> <?php echo link_to('/', 'essperience.tostring.nl', array("target"=>"_blank"), $secure = null); ?> | <a href="http://avans.nl">Avans.nl</a></span></p>
+        <span style='float:right;'> <?php echo link_to('/', 'essperience.tostring.nl', array(), $secure = null); ?> | <a href="http://avans.nl">Avans.nl</a></span></p>
     </div>
 </div>
 
