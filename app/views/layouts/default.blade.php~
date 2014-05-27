@@ -38,6 +38,7 @@
 		        	<ul class="nav"> 
 		          		<li><?php echo link_to('/games', 'games', array(), $secure = null); ?></li>    
 					<li><?php echo link_to('/stream', 'Live Stream', array(), $secure = null); ?></li>
+					<li><?php echo link_to('/highscores', 'Highscore', array(), $secure = null); ?></li>
 		        	</ul>
 
 		        	<div class="nav-collapse collapse">
