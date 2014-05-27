@@ -29,6 +29,7 @@ class HomeController extends BaseController
 
 	public function highscore_add($name, $score)
 	{
+	DB::insert('insert into highscores (name,score) values (?, ?)', array($name, $score));
 		return "highscore added";
 	}	
 
