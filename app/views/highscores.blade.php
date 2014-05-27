@@ -1,8 +1,14 @@
 @extends('layouts.default')
 @section('content')
-<table>
+<style>
+	.thead
+	{
+		text-align: left;
+	}
+</style>
+<table style="width: 100%;">
 	<tbody>
-		<tr><th>Name</th><th>Score</th><th>Date</th></tr>
+		<tr style="width: 940px; border: 1px solid black;" class="thead"><th style="min-width: 30%">Name</th><th style="width: 30%" class="thead">Score</th><th style="width: 30%" class="thead">Date</th></tr>
 		@foreach ($scores as $score)
     			<tr>
 				<td>{{ $score->name }}</td>
