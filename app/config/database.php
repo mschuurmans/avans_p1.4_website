@@ -56,7 +56,7 @@ return array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => 'essperience',
-			'username'  => 'mysqluser',
+			'username'  => 'essperience',
 			'password'  => '123456789qwertyuiop',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',

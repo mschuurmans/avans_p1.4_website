@@ -1,10 +1,15 @@
 @extends('layouts.default')
 @section('content')
-<b>Current games:</b> <br />
-Indiana Jantje <br />
-Flappy Bird <br />
-Fruit Opps<br />
-Whac a Fardoes<br />
-Simon Loves Fruit<br />
-Red Button 
+<table>
+	<tbody>
+		<tr><th>Name</th><th>Score</th><th>Date</th></tr>
+		@foreach ($scores as $score)
+    			<tr>
+				<td>{{ $score->name }}</td>
+				<td>{{ $score->score }}</td>
+				<td>{{ $score->date }}</td>	
+			</tr>
+		@endforeach
+	</tbody>
+</table>
 @endsection

@@ -24,7 +24,9 @@ class HomeController extends BaseController
 	public function highscores()
 	{
 		$title = $this->title_base . 'Highscores';
-		return View::make('highscores', compact('title'));
+		$scores = DB::select('select * from highscores ORDER BY score DESC');
+
+		return View::make('highscores', compact('title', 'scores'));
 	}
 
 	public function highscore_add($name, $score)
