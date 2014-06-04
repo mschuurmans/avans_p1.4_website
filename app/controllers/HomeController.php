@@ -37,7 +37,7 @@ class HomeController extends BaseController
 	
 	public function top_highscore()
 	{
-		$scores = DB::select("select * FROM highscores ORDER BY score DESC LIMIT 3");
+		$scores = DB::select("select * FROM highscores ORDER BY score DESC LIMIT 5");
 		//foreach($scores as 
 		return Response::json($scores);	
 	}

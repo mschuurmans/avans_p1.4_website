@@ -39,7 +39,7 @@ class HomeController extends BaseController
 	{
 		$scores = DB::select("select * FROM highscores ORDER BY score DESC LIMIT 3");
 		//foreach($scores as 
-		return Response::json($score);	
+		return Response::json($scores);	
 	}
 
 
