@@ -26,13 +26,21 @@ class HomeController extends BaseController
 		$title = $this->title_base . 'Highscores';
 		$scores = DB::select('select * from highscores ORDER BY score DESC');
 
-		return View::make('highscores', compact('title'));
+		return View::make('highscores', compact('title', 'scores'));
 	}
 
 	public function highscore_add($name, $score)
 	{
-	DB::insert('insert into highscores (name,score) values (?, ?)', array($name, $score));
+		DB::insert('insert into highscores (name,score) values (?, ?)', array($name, $score));
 		return "highscore added";
 	}	
+	
+	public function top_highscore()
+	{
+		$scores = DB::select("select * FROM highscores ORDER BY score DESC LIMIT 3");
+		//foreach($scores as 
+		return Response::json($score);	
+	}
+
 
 }

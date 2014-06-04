@@ -34,5 +34,13 @@ class HomeController extends BaseController
 		DB::insert('insert into highscores (name,score) values (?, ?)', array($name, $score));
 		return "highscore added";
 	}	
+	
+	public function top_highscore()
+	{
+		$scores = DB::select("select * FROM highscores ORDER BY score DESC LIMIT 3");
+		//foreach($scores as 
+		return Response::json($scores);	
+	}
+
 
 }

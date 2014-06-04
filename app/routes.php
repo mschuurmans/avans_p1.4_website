@@ -16,6 +16,6 @@ Route::get('/games', 'HomeController@games');
 Route::get('/stream', 'HomeController@stream');
 Route::get('/highscores', 'HomeController@highscores');
 Route::get('/highscore_add/{name}/{score}', 'HomeController@highscore_add');
-
+Route::get('/top_highscore', 'HomeController@top_highscore');
 Route::get('/users/{id}', 'UsersController@sayHi');
 Route::get('/admin/users/{id}', 'UsersController@adminSayHi');
