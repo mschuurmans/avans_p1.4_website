@@ -39,6 +39,7 @@
 		          		<li><?php echo link_to('/games', 'games', array(), $secure = null); ?></li>    
 					<li><?php echo link_to('/stream', 'Live Stream', array(), $secure = null); ?></li>
 					<li><?php echo link_to('/highscores', 'Highscore', array(), $secure = null); ?></li>
+<li><?php echo link_to('https://github.com/mschuurmans/avans_p1.4', 'Source', array("target"=>"_blank"), $secure = null); ?></li>
 		        	</ul>
 
 		        	<div class="nav-collapse collapse">

@@ -48,6 +48,11 @@ class HomeController extends BaseController
 		//foreach($scores as 
 		return Response::json($scores);	
 	}
-
+	
+	public function repo()
+	{
+		$title = $this->title_base . 'Repo';
+		return View::make('repo', compact('title'));	
+	}
 
 }

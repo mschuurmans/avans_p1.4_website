@@ -25,7 +25,7 @@
 			</td>
 			<td style="border: 1px solid black;">
 				<div>
-					{{HTML::image('images/flappy.jpg')}}<br /><br /> <br />Flap met een wii remote op en neer zodat je omhoog vliegt. Vlieg door de pijp heen en je bent door naar het volgende level.
+					{{HTML::image('images/flappy.jpg')}}<br /><br /> Flap met een wii remote op en neer zodat je omhoog vliegt. Vlieg door de pijp heen en je bent door naar het volgende level.
 				</div>
 			</td>
 		</tr>
